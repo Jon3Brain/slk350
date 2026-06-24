@@ -8,8 +8,8 @@
 <meta property="og:title" content="2008 Mercedes-Benz SLK350 — Black on Black Hardtop Convertible">
 <meta property="og:description" content="75k miles · 3.5L V6 · 7-speed auto · clean title · black on black on black. Eugene, OR.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="01.jpg">
-<meta name="theme-color" content="#0f0f11">
+<meta property="og:image" content="p053.jpg">
+<meta name="theme-color" content="#0d0d0f">
 <style>
   :root{
     --bg:#f7f7f6; --ink:#141416; --muted:#6e6e70; --line:#e3e3df;
@@ -28,39 +28,34 @@
   .btn{display:inline-block; background:var(--btn); color:#fff; font-weight:600; font-size:15px;
     padding:13px 28px; border:0; border-radius:4px; cursor:pointer; letter-spacing:.3px}
   .btn:hover{background:#000}
-  .btn.light{background:#fff; color:var(--ink); border:1px solid rgba(255,255,255,.25)}
+  .btn.light{background:#fff; color:var(--ink)}
   .btn.outline{background:transparent; color:#fff; border:1px solid rgba(255,255,255,.4)}
 
-  /* HERO */
-  .hero{position:relative; min-height:88vh; background:#0d0d0f center/cover no-repeat;
-    display:flex; flex-direction:column; color:#fff}
-  .hero::after{content:""; position:absolute; inset:0;
-    background:linear-gradient(to bottom, rgba(0,0,0,.55) 0%, rgba(0,0,0,.05) 32%, rgba(0,0,0,.15) 60%, rgba(0,0,0,.85) 100%)}
-  .hero-nav, .hero-foot{position:relative; z-index:2}
+  /* HERO — line-art on black, clean and uncluttered */
+  .hero{background:var(--darker); color:#fff; display:flex; flex-direction:column}
   .hero-nav{display:flex; justify-content:space-between; align-items:center; padding:20px 24px; max-width:var(--maxw); margin:0 auto; width:100%}
-  .logo{font-weight:700; letter-spacing:2px; font-size:14px}
-  .hero-nav .links{display:flex; gap:26px; font-size:13px; letter-spacing:.5px; color:rgba(255,255,255,.82)}
+  .logo{font-weight:700; letter-spacing:3px; font-size:14px}
+  .hero-nav .links{display:flex; gap:26px; font-size:13px; letter-spacing:.5px; color:rgba(255,255,255,.78)}
   .hero-nav .links a:hover{color:#fff}
   @media(max-width:620px){.hero-nav .links{display:none}}
-  .hero-foot{margin-top:auto; padding:0 24px 46px; max-width:var(--maxw); margin-left:auto; margin-right:auto; width:100%}
-  .hero-foot h1{font-size:clamp(34px,6vw,62px); line-height:1.02; font-weight:700; letter-spacing:-1px; margin:0}
-  .hero-foot .sub{font-size:16px; color:rgba(255,255,255,.85); margin-top:12px}
-  .hero-cta{display:flex; flex-wrap:wrap; gap:14px; align-items:center; margin-top:24px}
-  .hero-price{font-size:15px; color:rgba(255,255,255,.9)}
-  .hero-price b{display:block; font-size:20px; font-weight:700; color:#fff; letter-spacing:.2px}
-  .scrollhint{position:absolute; bottom:18px; left:50%; transform:translateX(-50%); z-index:2;
-    color:rgba(255,255,255,.6); font-size:22px}
+  .hero-art{max-width:820px; width:100%; margin:6px auto 0; padding:0 24px}
+  .hero-art img{width:100%; display:block}
+  .hero-foot{max-width:var(--maxw); margin:0 auto; width:100%; padding:6px 24px 48px; text-align:center}
+  .hero-foot h1{font-size:clamp(30px,5vw,52px); line-height:1.05; font-weight:700; letter-spacing:-1px; margin:0}
+  .hero-foot .sub{font-size:16px; color:rgba(255,255,255,.82); margin-top:12px}
+  .hero-cta{display:flex; flex-wrap:wrap; gap:14px; align-items:center; justify-content:center; margin-top:24px}
+  .hero-price{font-size:14px; color:rgba(255,255,255,.85); text-align:left}
+  .hero-price b{display:block; font-size:19px; font-weight:700; color:#fff; letter-spacing:.2px}
 
   /* SPEC STRIP */
-  .specstrip{background:var(--darker); color:#fff}
+  .specstrip{background:#000}
   .specstrip .row{display:grid; grid-template-columns:repeat(6,1fr); max-width:var(--maxw); margin:0 auto}
-  .specstrip .cell{padding:22px 12px; text-align:center; border-right:1px solid rgba(255,255,255,.08)}
+  .specstrip .cell{padding:22px 12px; text-align:center; border-right:1px solid rgba(255,255,255,.08); color:#fff}
   .specstrip .cell:last-child{border-right:0}
   .specstrip .v{font-size:21px; font-weight:700; letter-spacing:-.3px}
   .specstrip .k{font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:rgba(255,255,255,.55); margin-top:4px}
   @media(max-width:760px){.specstrip .row{grid-template-columns:repeat(3,1fr)} .specstrip .cell:nth-child(3){border-right:0}}
 
-  /* SECTION */
   section{padding:62px 0}
   section.tight{padding:42px 0}
   .lead{font-size:18px; max-width:760px}
@@ -75,14 +70,15 @@
   .disclosure h3{margin:0 0 6px; font-size:17px}
   .disclosure p{margin:0; color:#3a3a3c}
 
-  /* GALLERY */
-  .gallery{background:#fff; border-top:1px solid var(--line); border-bottom:1px solid var(--line)}
+  /* GALLERIES */
   .ggrid{display:grid; grid-template-columns:repeat(3,1fr); gap:10px}
-  @media(max-width:760px){.ggrid{grid-template-columns:repeat(2,1fr)}}
+  .ggrid.four{grid-template-columns:repeat(4,1fr)}
+  @media(max-width:760px){.ggrid,.ggrid.four{grid-template-columns:repeat(2,1fr)}}
   .gcell{position:relative; aspect-ratio:3/2; background:var(--frame); border-radius:4px; overflow:hidden; cursor:pointer}
   .gcell img{width:100%; height:100%; object-fit:cover; display:block; transition:transform .4s ease}
   .gcell:hover img{transform:scale(1.04)}
-  .gcell .ph{width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:#3c3c40}
+  .gallery{background:#fff; border-top:1px solid var(--line)}
+  .countnote{color:var(--muted); font-size:14px; margin:-8px 0 16px}
 
   /* SPECS TABLE */
   .spectable{display:grid; grid-template-columns:1fr 1fr; gap:0 48px; max-width:860px}
@@ -126,26 +122,26 @@
 <body>
 
 <!-- HERO -->
-<header class="hero" id="hero">
+<header class="hero">
   <nav class="hero-nav">
     <span class="logo">SLK 350</span>
     <span class="links">
-      <a href="#gallery">Photos</a>
-      <a href="#details">Details</a>
+      <a href="#featured">Photos</a>
+      <a href="#about">Details</a>
       <a href="#specs">Specs</a>
       <a href="#contact">Contact</a>
     </span>
   </nav>
+  <div class="hero-art"><img src="header.jpg" alt="Mercedes-Benz SLK350 line illustration"></div>
   <div class="hero-foot">
-    <h1>2008 Mercedes-Benz<br>SLK350</h1>
+    <h1>2008 Mercedes-Benz SLK350</h1>
     <div class="sub">Black-on-black hardtop convertible · 75,000 miles · clean Oregon title · Eugene, Oregon</div>
     <div class="hero-cta">
       <a class="btn light" href="#contact">Make an offer</a>
-      <a class="btn outline" href="#gallery">View photos</a>
+      <a class="btn outline" href="#featured">View photos</a>
       <span class="hero-price">Asking<b>Open to serious offers</b></span>
     </div>
   </div>
-  <div class="scrollhint"><i>&#8595;</i></div>
 </header>
 
 <!-- SPEC STRIP -->
@@ -160,7 +156,7 @@
   </div>
 </div>
 
-<!-- HIGHLIGHTS -->
+<!-- OVERVIEW -->
 <section class="wrap" id="details">
   <p class="kicker">Overview</p>
   <h2>Two cars in one — open roadster, sleek coupe</h2>
@@ -176,14 +172,12 @@
   </ul>
 </section>
 
-<!-- GALLERY -->
-<div class="gallery" id="gallery">
-  <section class="wrap tight">
-    <p class="kicker">Gallery</p>
-    <h2>The car</h2>
-    <div class="ggrid" id="ggrid"></div>
-  </section>
-</div>
+<!-- FEATURED PHOTOS -->
+<section class="wrap tight" id="featured">
+  <p class="kicker">Featured</p>
+  <h2>A closer look</h2>
+  <div class="ggrid" id="featgrid"></div>
+</section>
 
 <!-- ABOUT -->
 <section class="wrap body-text" id="about">
@@ -233,6 +227,16 @@
   </div>
 </section>
 
+<!-- FULL GALLERY -->
+<div class="gallery" id="gallery">
+  <section class="wrap tight">
+    <p class="kicker">Full gallery</p>
+    <h2>Every photo</h2>
+    <p class="countnote" id="galcount"></p>
+    <div class="ggrid four" id="fullgrid"></div>
+  </section>
+</div>
+
 <!-- CONTACT -->
 <div class="contact" id="contact">
   <section class="wrap">
@@ -278,40 +282,33 @@
 </div>
 
 <script>
-/* PHOTOS — files live at the repo root. 01.jpg is the hero.
-   Add/replace files and update this list to match. */
-const PHOTOS = ["01.jpg","02.jpg","03.jpg","04.jpg","05.jpg","06.jpg","07.jpg","08.jpg","09.jpg"];
+/* Full set: p001.jpg ... p108.jpg (repo root) */
+const ALL = Array.from({length:108}, (_,i)=>"p"+String(i+1).padStart(3,"0")+".jpg");
+/* Featured 10 — front, side, rear, driveway, interior, tech */
+const HL = ["p053.jpg","p062.jpg","p030.jpg","p073.jpg","p076.jpg","p002.jpg","p082.jpg","p088.jpg","p099.jpg","p104.jpg"];
 
-/* Hero background = first photo (graceful dark fallback if missing) */
-(function(){
-  const hero=document.getElementById('hero');
-  if(PHOTOS[0]){
-    const im=new Image();
-    im.onload=()=>{ hero.style.backgroundImage="url('"+PHOTOS[0]+"')"; };
-    im.src=PHOTOS[0];
-  }
-})();
+function buildGrid(el, list, set){
+  list.forEach((src,i)=>{
+    const cell=document.createElement('div'); cell.className='gcell';
+    const img=new Image(); img.loading='lazy';
+    img.onload=()=>{ img.alt='SLK350 photo'; cell.appendChild(img); };
+    img.src=src;
+    cell.addEventListener('click',()=>openLB(set, i));
+    el.appendChild(cell);
+  });
+}
+buildGrid(document.getElementById('featgrid'), HL, 'HL');
+buildGrid(document.getElementById('fullgrid'), ALL, 'ALL');
+document.getElementById('galcount').textContent = ALL.length + " photos — click any image to enlarge.";
 
-const camSVG='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="34" height="34"><path d="M3 8.5A2.5 2.5 0 0 1 5.5 6h1.2l1-1.6A2 2 0 0 1 9.4 3.5h5.2a2 2 0 0 1 1.7.9l1 1.6h1.2A2.5 2.5 0 0 1 21 8.5v9A2.5 2.5 0 0 1 18.5 20h-13A2.5 2.5 0 0 1 3 17.5z"/><circle cx="12" cy="13" r="3.4"/></svg>';
-
-/* Build gallery */
-const grid=document.getElementById('ggrid');
-PHOTOS.forEach((src,i)=>{
-  const cell=document.createElement('div'); cell.className='gcell';
-  const img=new Image();
-  img.onload=()=>{ img.alt='SLK350 photo '+(i+1); cell.appendChild(img); };
-  img.onerror=()=>{ cell.innerHTML='<div class="ph">'+camSVG+'</div>'; };
-  img.src=src;
-  cell.addEventListener('click',()=>openLB(i));
-  grid.appendChild(cell);
-});
-
-/* Lightbox */
+/* Lightbox over whichever set was clicked */
+const sets={HL:HL, ALL:ALL};
+let curSet=ALL, cur=0;
 const lb=document.getElementById('lb'), lbimg=document.getElementById('lbimg'), lbc=document.getElementById('lbc');
-let cur=0;
-function openLB(i){ if(!PHOTOS[i])return; cur=i; lbimg.src=PHOTOS[i]; lbc.textContent=(i+1)+' / '+PHOTOS.length; lb.classList.add('show'); document.body.style.overflow='hidden'; }
+function openLB(setName,i){ curSet=sets[setName]; cur=i; show(); lb.classList.add('show'); document.body.style.overflow='hidden'; }
+function show(){ lbimg.src=curSet[cur]; lbc.textContent=(cur+1)+' / '+curSet.length; }
 function closeLB(){ lb.classList.remove('show'); document.body.style.overflow=''; }
-function step(d){ cur=(cur+d+PHOTOS.length)%PHOTOS.length; openLB(cur); }
+function step(d){ cur=(cur+d+curSet.length)%curSet.length; show(); }
 document.getElementById('lbx').onclick=closeLB;
 document.getElementById('lbp').onclick=e=>{e.stopPropagation();step(-1);};
 document.getElementById('lbn').onclick=e=>{e.stopPropagation();step(1);};
