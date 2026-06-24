@@ -290,9 +290,9 @@ const HL = ["p053.jpg","p062.jpg","p030.jpg","p073.jpg","p076.jpg","p002.jpg","p
 function buildGrid(el, list, set){
   list.forEach((src,i)=>{
     const cell=document.createElement('div'); cell.className='gcell';
-    const img=new Image(); img.loading='lazy';
-    img.onload=()=>{ img.alt='SLK350 photo'; cell.appendChild(img); };
-    img.src=src;
+    const img=document.createElement('img');
+    img.loading='lazy'; img.alt='SLK350 photo'; img.src=src;
+    cell.appendChild(img);
     cell.addEventListener('click',()=>openLB(set, i));
     el.appendChild(cell);
   });
