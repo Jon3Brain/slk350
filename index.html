@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>2008 Mercedes-Benz SLK350 — For Sale | Eugene, OR</title>
-<meta name="description" content="Black-on-black 2008 Mercedes-Benz SLK350 retractable hardtop convertible. 75k miles, 3.5L V6, 7-speed auto, clean Oregon title. Located in Eugene, OR.">
-<meta property="og:title" content="2008 Mercedes-Benz SLK350 — Black on Black Hardtop Convertible">
+<title>2007 Mercedes-Benz SLK350 — For Sale | Eugene, OR</title>
+<meta name="description" content="Black-on-black 2007 Mercedes-Benz SLK350 retractable hardtop convertible. 75k miles, 3.5L V6, 7-speed auto, clean Oregon title. Located in Eugene, OR.">
+<meta property="og:title" content="2007 Mercedes-Benz SLK350 — Black on Black Hardtop Convertible">
 <meta property="og:description" content="75k miles · 3.5L V6 · 7-speed auto · clean title · black on black on black. Eugene, OR.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="p053.jpg">
@@ -95,6 +95,8 @@
   .form .grid2{display:grid; grid-template-columns:1fr 1fr; gap:14px}
   @media(max-width:520px){.form .grid2{grid-template-columns:1fr}}
   .form label{display:block; font-size:13px; letter-spacing:.5px; margin:16px 0 6px; color:rgba(255,255,255,.75)}
+  .form .fieldnote{font-size:13.5px; color:rgba(255,255,255,.62); margin:18px 0 2px}
+  .form .opt{color:rgba(255,255,255,.45); font-weight:400; letter-spacing:0}
   .form input,.form textarea{width:100%; padding:12px 14px; border:1px solid rgba(255,255,255,.18);
     background:#0e0e10; color:#fff; border-radius:4px; font-size:15px; font-family:inherit}
   .form input:focus,.form textarea:focus{outline:none; border-color:rgba(255,255,255,.55)}
@@ -134,7 +136,7 @@
   </nav>
   <div class="hero-art"><img src="header.jpg" alt="Mercedes-Benz SLK350 line illustration"></div>
   <div class="hero-foot">
-    <h1>2008 Mercedes-Benz SLK350</h1>
+    <h1>2007 Mercedes-Benz SLK350</h1>
     <div class="sub">Black-on-black hardtop convertible · 75,000 miles · clean Oregon title · Eugene, Oregon</div>
     <div class="hero-cta">
       <a class="btn light" href="#contact">Make an offer</a>
@@ -147,7 +149,7 @@
 <!-- SPEC STRIP -->
 <div class="specstrip">
   <div class="row">
-    <div class="cell"><div class="v">2008</div><div class="k">Year</div></div>
+    <div class="cell"><div class="v">2007</div><div class="k">Year</div></div>
     <div class="cell"><div class="v">75k</div><div class="k">Miles</div></div>
     <div class="cell"><div class="v">3.5L V6</div><div class="k">Engine</div></div>
     <div class="cell"><div class="v">7-spd</div><div class="k">Auto</div></div>
@@ -212,7 +214,7 @@
   <p class="kicker">Specifications</p>
   <h2>By the numbers</h2>
   <div class="spectable">
-    <div class="line"><span class="k">Year</span><span class="v">2008</span></div>
+    <div class="line"><span class="k">Year</span><span class="v">2007</span></div>
     <div class="line"><span class="k">Make / Model</span><span class="v">Mercedes-Benz SLK350</span></div>
     <div class="line"><span class="k">Mileage</span><span class="v">75,000</span></div>
     <div class="line"><span class="k">Engine</span><span class="v">3.5L V6</span></div>
@@ -222,7 +224,7 @@
     <div class="line"><span class="k">Exterior / Interior</span><span class="v">Black / Black</span></div>
     <div class="line"><span class="k">Wheels</span><span class="v">Aftermarket black</span></div>
     <div class="line"><span class="k">Title</span><span class="v">Clean — in hand</span></div>
-    <div class="line"><span class="k">VIN</span><span class="v" id="vin">To be added</span></div>
+    <div class="line"><span class="k">VIN</span><span class="v" id="vin">WDBWK56F17F148886</span></div>
     <div class="line"><span class="k">Location</span><span class="v">Eugene, OR</span></div>
   </div>
 </section>
@@ -242,16 +244,17 @@
   <section class="wrap">
     <p class="kicker">Get in touch</p>
     <h2>Make an offer or ask a question</h2>
-    <p style="color:rgba(255,255,255,.7); max-width:640px; margin-top:-6px">You'll get a reply by email.
-    No phone number required.</p>
     <form class="form" id="offerForm">
       <input type="hidden" name="access_key" value="13fe7cba-6665-44eb-b882-77909b57ad72">
       <input type="hidden" name="subject" value="SLK350 inquiry from slk350.xyz">
       <input type="hidden" name="from_name" value="slk350.xyz">
       <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
+      <label for="name">Your name</label>
+      <input id="name" name="name" type="text" required>
+      <p class="fieldnote">Let me know how you'd like me to contact you — add an email, a phone number, or both.</p>
       <div class="grid2">
-        <div><label for="name">Your name</label><input id="name" name="name" type="text" required></div>
-        <div><label for="email">Your email</label><input id="email" name="email" type="email" required></div>
+        <div><label for="email">Email <span class="opt">(optional)</span></label><input id="email" name="email" type="email"></div>
+        <div><label for="phone">Phone <span class="opt">(optional)</span></label><input id="phone" name="phone" type="tel"></div>
       </div>
       <label for="offer">Your offer (optional)</label>
       <input id="offer" name="offer" type="text" placeholder="e.g. $6,000">
@@ -266,7 +269,7 @@
 
 <footer>
   <div class="wrap">
-    <div>2008 Mercedes-Benz SLK350 · Eugene, Oregon · Private sale, no trades.</div>
+    <div>2007 Mercedes-Benz SLK350 · Eugene, Oregon · Private sale, no trades.</div>
     <div class="disc">Vehicle sold as-is. Description provided in good faith and believed accurate; buyers
     encouraged to inspect in person. Comparable-value figures referenced from cars.com.</div>
   </div>
@@ -282,9 +285,7 @@
 </div>
 
 <script>
-/* Full set: p001.jpg ... p108.jpg (repo root) */
 const ALL = Array.from({length:108}, (_,i)=>"p"+String(i+1).padStart(3,"0")+".jpg");
-/* Featured 10 — front, side, rear, driveway, interior, tech */
 const HL = ["p053.jpg","p062.jpg","p030.jpg","p073.jpg","p076.jpg","p002.jpg","p082.jpg","p088.jpg","p099.jpg","p104.jpg"];
 
 function buildGrid(el, list, set){
@@ -301,7 +302,6 @@ buildGrid(document.getElementById('featgrid'), HL, 'HL');
 buildGrid(document.getElementById('fullgrid'), ALL, 'ALL');
 document.getElementById('galcount').textContent = ALL.length + " photos — click any image to enlarge.";
 
-/* Lightbox over whichever set was clicked */
 const sets={HL:HL, ALL:ALL};
 let curSet=ALL, cur=0;
 const lb=document.getElementById('lb'), lbimg=document.getElementById('lbimg'), lbc=document.getElementById('lbc');
@@ -316,16 +316,17 @@ lb.addEventListener('click',e=>{ if(e.target===lb)closeLB(); });
 document.addEventListener('keydown',e=>{ if(!lb.classList.contains('show'))return;
   if(e.key==='Escape')closeLB(); if(e.key==='ArrowLeft')step(-1); if(e.key==='ArrowRight')step(1); });
 
-/* Contact form -> Web3Forms */
 const form=document.getElementById('offerForm'), status=document.getElementById('status');
 form.addEventListener('submit',async e=>{
   e.preventDefault();
-  status.className='status show'; status.textContent='Sending…';
   const data=new FormData(form);
+  const email=(data.get('email')||'').trim(), phone=(data.get('phone')||'').trim();
+  if(!email && !phone){ status.className='status show err'; status.textContent='Please add an email or a phone number so the seller can reach you.'; return; }
+  status.className='status show'; status.textContent='Sending…';
   try{
     const r=await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Accept':'application/json'},body:data});
     const j=await r.json();
-    if(j.success){ form.reset(); status.className='status show ok'; status.textContent='Thanks — your message was sent. The seller will reply by email.'; }
+    if(j.success){ form.reset(); status.className='status show ok'; status.textContent='Thanks — your message was sent. The seller will reply soon.'; }
     else{ status.className='status show err'; status.textContent='Something went wrong. Please email r32wagn@gmail.com directly.'; }
   }catch(err){ status.className='status show err'; status.textContent='Network error. Please email r32wagn@gmail.com directly.'; }
 });
